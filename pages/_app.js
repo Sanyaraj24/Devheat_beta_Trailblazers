@@ -4,7 +4,7 @@ import Footer from '@/components/Footer'
 
 
 import '@/styles/globals.css'
-
+//import Home from './Home'
 export default function App({ Component, pageProps }) {
   return( 
   <>
