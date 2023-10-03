@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.mypage{
+    margin: 0px;
+    padding: 0px;
+    background-image: url("1402.jpg");
+    background-size: cover;
+}

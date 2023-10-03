@@ -1,0 +1,136 @@
+
+.head{
+  font-size: 35px;
+  font-weight: 200;
+  font-family: sans-serif;
+  background-color: rgb(204, 204, 255);
+}
+.stati{
+    font-weight: 400;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight:400; 
+}
+
+
+.per{
+    font-size: 25px;
+  font-family: sans-serif;
+  background-color: rgb(204, 204, 255);
+  height: 50px;
+  contain: fill;
+  text-align:left;
+  padding: 4px;
+  font-weight: 500;
+}
+.todayprice{
+    background-color: whitesmoke;
+}
+.h{
+    font-size: 20px;
+  font-family: sans-serif;
+}
+.box1{
+    float: left;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+.box2{
+    float: right;
+    margin-right: 300px;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+.box3{
+    float: left;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+.box4{
+    float: right;
+    margin-right: 286px;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+.peri{
+    background-color: whitesmoke;
+    height: 80px;
+}
+.b1{
+    float: left;
+    background-color: whitesmoke;
+    font-family: sans-serif;
+    font-weight: 500;
+    
+}
+.b2{
+    float: left;
+    margin-left: 300px;
+    background-color: whitesmoke;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+.b3{
+    float: right;
+    margin-right: 300px;
+    background-color: whitesmoke;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+.head2{
+    font-size: 25px;
+  font-family: sans-serif;
+  background-color: rgb(204, 204, 255);
+  height: 50px;
+  contain: fill;
+  text-align:left;
+  padding: 4px;
+  font-weight: 500;
+
+}
+.error{
+    box-sizing: border-box;
+    box-shadow: 3px;
+    position: absolute;
+    align-self: flex-end;
+}
+.a1,.a3,.a5,.a6{
+    float: left;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+.a2,.a4,.a8{
+    margin-left: 300px;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+.a6{
+    margin-left: 220px;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+.buysell {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.buy{
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    align-items: center;
+    cursor: pointer;}
+.sell{
+    padding: 10px 20px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 100px;
+
+}
+

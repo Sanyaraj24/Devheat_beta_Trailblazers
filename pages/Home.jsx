@@ -1,34 +1,65 @@
 import React from 'react'
-import { useEffect,useState } from 'react'
-import axios from 'axios';
+import { ReactSearchAutocomplete } from 'react-search-autocomplete'
+import data from "@/public/stocklist"
+import { useState } from 'react'
+import { useRouter } from 'next/router'
+import { Toast } from '@chakra-ui/react'
 
-function Home() {
-    const [data,setData]=useState([])
-    const [records,setRecords]=useState(data)
-    useEffect(()=>{
-        axios.get(`https://api.twelvedata.com/stocks?country=India`)
-        .then(res=>setData(res.data))
-        .catch(err=>console.log(err));
-    },[])
-    const Filter=(event)=>{
-        setRecords(data.filter(f=>f.name.toLowerCase().includes(event.target.value)))
+const Home = () => {
+    const[stock,setStock]=useState("")
+//creating a instance to push
+    const router=useRouter();
+//state for boolean
+const [isDisable,setDisable]=useState(true)
+
+    const handleOnSelect = (item) => {
+          //item  is the value that is selected,so item is taken as a parameter
+        console.log(item)
+        setStock(item);
+        setDisable(false);
+        }
+    const formatResult = (item) => {
+          return (
+            <>
+              <span style={{ display: 'block', textAlign: 'left' }}>{item.name}</span>
+              <span style={{ display: 'block', textAlign: 'left' }}>{item.symbol}</span>
+            </>
+          )
+        }
+//FRTRTTT
+    const handleRoute=()=>{
+        //if stock is not selected
+        if(isDisable){
+          window.alert("Please Select a Stock");
+          return;
+        }
+
+         else router.push({pathname:"/performance",
+                     query:stock})
     }
   return (
-    <div className="box">
-        <div className="box2">
-            <input typr="text" className='form-control'onChange={Filter}/>
-            <table className='table'>
-                <tbody>
-                    {records.data && records.data.map((d,i)=>(
-                        <tr key={i}><td>{d.id}</td>
-                        <td>{d.name}</td>
-                        </tr>
-                    ))}
-                </tbody>
-            </table>
+    <>
+    <div style={{ width: 400 }}>
+          <ReactSearchAutocomplete
+            items={data}
+            onSelect={handleOnSelect}    //handles when we select a stock
+            fuseOptions={{ keys: ["name", "exchange"] }} //KET takes two coloumns..what we want to display in search bar..for that we use resultstringkey
+            resultStringKeyName="name"   //after selecting,we see this for a partcular stock
+            placeholder='Search for Stock'
+            formatResult={formatResult}  
+            onClear={()=>setDisable(false)}
+            styling={
+                {
+  backgroundcolor: "whitesmoke",
+                }
+
+            }
+        
+ />
         </div>
-    </div>
-   
+        <button style={{backgroundColor:"rgb(204, 204, 255)",padding:"5px",borderRadius:"5px" ,width:"70px",height:"45px"}}
+        onClick={handleRoute}>Search</button>
+    </>
   )
 }
 
