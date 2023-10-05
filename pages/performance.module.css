@@ -1,86 +1,106 @@
-
+.main{
+    background-color: white;
+    color: white;
+}
+.body{
+    background-color: white;
+}
 .head{
-  font-size: 35px;
+  font-size: 40px;
   font-weight: 200;
   font-family: sans-serif;
-  background-color: rgb(204, 204, 255);
+  background-color: rgb(147,112,219);
+  color: white;
+  margin: 10px;
+  padding: 10px;
 }
 .stati{
     font-weight: 400;
     font-family: sans-serif;
     font-size: 30px;
     font-weight:400; 
+    color: white;
 }
 
 
 .per{
     font-size: 25px;
   font-family: sans-serif;
-  background-color: rgb(204, 204, 255);
+  background-color: rgb(147,112,219);
   height: 50px;
   contain: fill;
-  text-align:left;
-  padding: 4px;
+  margin: 10px;
+  padding: 10px;
   font-weight: 500;
+  color: white;
 }
 .todayprice{
-    background-color: whitesmoke;
+    color: white;
+
 }
 .h{
     font-size: 20px;
   font-family: sans-serif;
+  color: white;
 }
 .box1{
     float: left;
     font-weight: 500;
     font-family: sans-serif;
+    color: white;
 }
 .box2{
     float: right;
     margin-right: 300px;
     font-weight: 500;
     font-family: sans-serif;
+    color: white;
 }
 .box3{
     float: left;
     font-weight: 500;
     font-family: sans-serif;
+    color: white;
 }
 .box4{
     float: right;
     margin-right: 286px;
     font-family: sans-serif;
     font-weight: 500;
+    color: white;
 }
 .peri{
-    background-color: whitesmoke;
     height: 80px;
+    color: white;
 }
 .b1{
     float: left;
-    background-color: whitesmoke;
+
     font-family: sans-serif;
     font-weight: 500;
+    color: white;
     
 }
 .b2{
     float: left;
     margin-left: 300px;
-    background-color: whitesmoke;
+    
+    color: white;
+    
     font-family: sans-serif;
     font-weight: 500;
 }
 .b3{
     float: right;
     margin-right: 300px;
-    background-color: whitesmoke;
+    color: white;
     font-family: sans-serif;
     font-weight: 500;
 }
 .head2{
     font-size: 25px;
   font-family: sans-serif;
-  background-color: rgb(204, 204, 255);
+  color: white;
   height: 50px;
   contain: fill;
   text-align:left;
@@ -120,17 +140,17 @@
     color: #fff;
     border: none;
     border-radius: 5px;
-    align-items: center;
-    cursor: pointer;}
+    margin-left: 500px;
+    cursor: pointer;
+    }
 .sell{
     padding: 10px 20px;
     background-color: red;
     color: #fff;
     border: none;
     border-radius: 5px;
-    align-items: center;
     cursor: pointer;
-    margin-left: 100px;
+    margin-right: 500px;
 
 }
 

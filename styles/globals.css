@@ -5,6 +5,10 @@
 .mypage{
     margin: 0px;
     padding: 0px;
-    background-image: url("1402.jpg");
+    background-image: url("futuric-world-high-buildings-night-art.jpg");
     background-size: cover;
+    height: 1800px;
+}
+.Footer{
+    background-color: black;
 }

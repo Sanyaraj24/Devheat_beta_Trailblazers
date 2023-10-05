@@ -57,7 +57,7 @@ const [isDisable,setDisable]=useState(true)
         
  />
         </div>
-        <button style={{backgroundColor:"rgb(204, 204, 255)",padding:"5px",borderRadius:"5px" ,width:"70px",height:"45px"}}
+        <button style={{backgroundColor:"rgb(147,112,219)",padding:"1px",margin:"2px",marginLeft:"20px",borderRadius:"5px" ,width:"70px",height:"45px",float:"left"}}
         onClick={handleRoute}>Search</button>
     </>
   )
