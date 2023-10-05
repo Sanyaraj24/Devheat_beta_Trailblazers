@@ -1,18 +1,18 @@
-.main{
-    background-color: white;
-    color: white;
-}
+
 .body{
     background-color: white;
 }
 .head{
-  font-size: 40px;
-  font-weight: 200;
+    font-size: 40px;
   font-family: sans-serif;
   background-color: rgb(147,112,219);
-  color: white;
+  height: 60px;
+ 
   margin: 10px;
   padding: 10px;
+  font-weight: 500;
+  color: white;
+  width: "100%";
 }
 .stati{
     font-weight: 400;
@@ -34,10 +34,6 @@
   font-weight: 500;
   color: white;
 }
-.todayprice{
-    color: white;
-
-}
 .h{
     font-size: 20px;
   font-family: sans-serif;
@@ -48,6 +44,7 @@
     font-weight: 500;
     font-family: sans-serif;
     color: white;
+    
 }
 .box2{
     float: right;
@@ -144,7 +141,7 @@
     cursor: pointer;
     }
 .sell{
-    padding: 10px 20px;
+    padding: 20px 30px;
     background-color: red;
     color: #fff;
     border: none;

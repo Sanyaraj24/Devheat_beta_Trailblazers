@@ -1,4 +1,5 @@
 //import Footer from '@/components/Footer'
+import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 //import React, { useLayoutEffect } from 'react'
 //import Mainpage from './Mainpage'
@@ -20,8 +21,7 @@ export default function App({ Component, pageProps }) {
  
   <Component {...pageProps} />
   </div>
-
-
+<Footer/>
   </div>
   
 

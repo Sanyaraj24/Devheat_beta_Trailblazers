@@ -50,7 +50,7 @@ return(
     marginLeft:"70px",
     width:"1360px",
     marginTop:"300px",
-    height:"1500px",
+    height:"100%",
     borderRadius:"10px",
     opacity:"2",
     border:"3px"
@@ -77,6 +77,7 @@ return(
 <div className={styles.todayprice}>
    <div className={styles.per}>Performance</div>
     <br></br>
+<div className="myper">
    <div className={styles.box1}>
         <Stat>
           <StatLabel> Today's Low</StatLabel>
@@ -89,8 +90,8 @@ return(
           <StatNumber>{r.close}</StatNumber>
         </Stat>
    </div>
-   <hr width="70%" 
-        size="20" 
+   <hr width="100%" 
+        size="80" 
         align="center"color='grey'></hr>
     <br></br>
     <br></br>
@@ -107,7 +108,7 @@ return(
         </Stat>
   </div>
   <hr width="100%" 
-        size="20" 
+        size="80px"
         align="center"></hr>
   <br></br>
 <div className={styles.peri}>
@@ -127,6 +128,7 @@ return(
         </Stat>
 
     </div>
+</div>
 </div>
 </div>
 <br></br>
@@ -186,11 +188,16 @@ return(
 </br>
 <br></br>
 <div className={styles.buysell}>
-           <button className={styles.buy}>Buy Stock</button>
+           <button className={styles.buy} id="incrementButton">Buy Stock</button>
            <button className={styles.sell}>Sell Stock</button>
 </div>
 </div>
+<br></br>
+<br></br>
+<br></br>
 </Box>
+
+<script src="buysellcount.js"></script>
 </>
 )
 }

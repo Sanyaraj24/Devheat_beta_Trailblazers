@@ -1,91 +1,204 @@
-import React from 'react'
+import * as React from 'react';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Typography from '@mui/material/Typography';
+import { Button, CardActionArea, CardActions } from '@mui/material';
+import styles from './TopCompany.module.css'
 
-const Dashboard = () => {
+export default function MultiActionAreaCard() {
   return (
     <>
-
-    <section class="text-gray-600 body-font">
-  <div class="container px-5 py-24 mx-auto">
-    <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
-      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Pitchfork Kickstarter Taxidermy</h1>
-      <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table.</p>
+    <div className={styles.container}>
+ <div className={styles.box}>
+    <Card sx={{ maxWidth: 345 }} style={{color:"white",backgroundColor:"black"}}>
+      <CardActionArea>
+        <CardMedia
+          component="img"
+          height="140"
+          image="german-american.jpg"
+          alt="green iguana"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="div">
+          German American Bancorp
+          </Typography>
+          <Typography variant="body2" color="text.secondary"style={{color:"white"}} >
+          German American Bancorp, Inc. has earned the 19th ranking our of 196 community banks in the nation on the S&P Global Market Intelligence annual ranking of 2022’s best-forming community banks with assets between $3 billion and $10 billion.
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+      <CardActions>
+       
+      </CardActions>
+    </Card></div>
+    
+   
+    <div className={styles.box}>
+    <Card sx={{ maxWidth: 345 }}style={{color:"white",backgroundColor:"black"}}>
+      <CardActionArea style={{color:"white",backgroundColor:"black"}}>
+        <CardMedia
+          component="img"
+          height="140"
+          image="nvidia.jpeg"
+          alt="green iguana"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="div" style={{color:"white",backgroundColor:"black"}}>
+          NVIDIA Corp
+          </Typography>
+          <Typography variant="body2" color="text.secondary"style={{backgroundColor:"black",color:"white"}}>
+          For Nvidia, CNBC reports that consensus EPS estimates imply 11.4% growth over the next year, followed by 41.0% growth over the next three to five years. For the tech sector, the figures are 15.6% and 45.7%, respectively. 
+          <br>
+          </br>
+        <br></br>
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+      <CardActions>
+      </CardActions>
+    </Card></div>
+    <div className={styles.box} >
+    
+    <Card sx={{ maxWidth: 345 }}style={{color:"white",backgroundColor:"black"}}>
+      <CardActionArea style={{color:"white",backgroundColor:"black"}}>
+        <CardMedia
+          component="img"
+          height="140"
+          image="apple.png"
+          alt="green iguana"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="div">
+            Apple Inc
+          </Typography>
+          <Typography variant="body2" color="text.secondary"style={{color:"white"}}>
+          Apple is the world's largest technology company by revenue, with US$394.3 billion in 2022 revenue. As of March 2023<br>
+          </br>
+          <br></br>Apple is the world's biggest company by market capitalization.
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+      <CardActions>
+      </CardActions>
+    </Card></div>
+   
+    <div className={styles.box}>
+    <Card sx={{ maxWidth: 345 }}style={{color:"white",backgroundColor:"black"}}>
+      <CardActionArea style={{color:"white",backgroundColor:"black"}}>
+        <CardMedia
+          component="img"
+          height="140"
+          image="microsoft.jpeg"
+          alt="green iguana"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="div">
+          Microsoft Corp
+          </Typography>
+          <Typography variant="body2" color="text.secondary"style={{color:"white"}}>
+          Microsoft Corp. easily topped profit and revenue expectations for its latest quarter, though its shares were moving more than 3% lower in extended trading Tuesday after the company discussed the year ahead.
+        
+          <br></br>
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+      <CardActions>
+        
+      </CardActions>
+    </Card></div>
+    <div className={styles.box}>
+    <Card sx={{ maxWidth: 345 }}style={{color:"white",backgroundColor:"black"}}>
+      <CardActionArea style={{color:"white",backgroundColor:"black"}}>
+        <CardMedia
+          component="img"
+          height="140"
+          image="nisource.jpeg"
+          alt="green iguana"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="div">
+          NiSource Inc.
+          </Typography>
+          <Typography variant="body2" color="text.secondary"style={{color:"white"}}>
+          NiSource Inc. is reporting second quarter net income of of $39.9 million — a drop from the $53.2 million made in the same quarter last year. The earnings report was released on the same day the utility announced an increase in electric rates will begin this month.
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+      <CardActions>
+       
+      </CardActions>
+    </Card></div>
+    <div className={styles.box}>
+    <Card sx={{ maxWidth: 345 }}style={{color:"white",backgroundColor:"black"}}>
+      <CardActionArea style={{color:"white",backgroundColor:"black"}}>
+        <CardMedia
+          component="img"
+          height="140"
+          image="uscorp.jpeg"
+          alt="green iguana"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="div">
+          USCorp.
+          </Typography>
+          <Typography variant="body2" color="text.secondary"style={{color:"white"}}>
+            <br></br>
+          U.S. corporate bond spreads continue to tighten and are now essentially the same as 2017–2019 said Nicholas Colas, co-founder of DataTrek Research, in a note emailed Monday.<br></br>
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+      <CardActions>
+        
+      </CardActions>
+    </Card></div>
+    <div className={styles.box}>
+    <Card sx={{ maxWidth: 345 }}style={{color:"white",backgroundColor:"black"}}>
+      <CardActionArea style={{color:"white",backgroundColor:"black"}}>
+        <CardMedia
+          component="img"
+          height="140"
+          image="nesco.jpeg"
+          alt="green iguana"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="div">
+          Nesco Limited
+          </Typography>
+          <Typography variant="body2" color="text.secondary"style={{color:"white"}}>
+          Nesco Limited is a diversified Company in four business segments viz., IT Parks, Exhibition Centre, Foods and Indabrator. While the Indian promoters hold 68% stake.
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+      <CardActions>
+        
+      </CardActions>
+    </Card></div>
+    <div className={styles.box}>
+    <Card sx={{ maxWidth: 345 }}style={{color:"white",backgroundColor:"black"}}>
+      <CardActionArea style={{color:"white",backgroundColor:"black"}}>
+        <CardMedia
+          component="img"
+          height="140"
+          image="gnf.jpeg"
+          alt="green iguana"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="div">
+          Genfit
+          </Typography>
+          <Typography variant="body2" color="text.secondary"style={{color:"white"}}>
+          As Genfit hopes for phase 3 trial successes and future filings for its liver disease drug, its long-term CEO.
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+      <CardActions>
+       
+      </CardActions>
+    </Card></div>
+    
     </div>
-    <div class="flex flex-wrap -m-4">
-      <div class="xl:w-1/3 md:w-1/2 p-4">
-        <div class="border border-gray-200 p-6 rounded-lg">
-          <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
-              <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-            </svg>
-          </div>
-          <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Shooting Stars</h2>
-          <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
-        </div>
-      </div>
-      <div class="xl:w-1/3 md:w-1/2 p-4">
-        <div class="border border-gray-200 p-6 rounded-lg">
-          <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
-              <circle cx="6" cy="6" r="3"></circle>
-              <circle cx="6" cy="18" r="3"></circle>
-              <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
-            </svg>
-          </div>
-          <h2 class="text-lg text-gray-900 font-medium title-font mb-2">The Catalyzer</h2>
-          <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
-        </div>
-      </div>
-      <div class="xl:w-1/3 md:w-1/2 p-4">
-        <div class="border border-gray-200 p-6 rounded-lg">
-          <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
-              <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-              <circle cx="12" cy="7" r="4"></circle>
-            </svg>
-          </div>
-          <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Neptune</h2>
-          <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
-        </div>
-      </div>
-      <div class="xl:w-1/3 md:w-1/2 p-4">
-        <div class="border border-gray-200 p-6 rounded-lg">
-          <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
-              <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1zM4 22v-7"></path>
-            </svg>
-          </div>
-          <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Melanchole</h2>
-          <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
-        </div>
-      </div>
-      <div class="xl:w-1/3 md:w-1/2 p-4">
-        <div class="border border-gray-200 p-6 rounded-lg">
-          <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
-              <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
-            </svg>
-          </div>
-          <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Bunker</h2>
-          <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
-        </div>
-      </div>
-      <div class="xl:w-1/3 md:w-1/2 p-4">
-        <div class="border border-gray-200 p-6 rounded-lg">
-          <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-            </svg>
-          </div>
-          <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Ramona Falls</h2>
-          <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
-        </div>
-      </div>
-    </div>
-    <button class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
-  </div>
-</section>
+    
     </>
-  )
+  );
 }
-
-export default Dashboard
