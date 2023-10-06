@@ -48,7 +48,7 @@ Used Autocomplete to make the search box and fetched the stock list of comapnies
 Used api fetching for showing graphs
 Used API to fetch the real time stock values in the performance section.
 
-Link of the youtube video for my project: https://youtu.be/lxi9PYLu6vQ?si=hxkqbuJW7hmJThyT
+Link of Googlle Drive:https://drive.google.com/drive/folders/1cS0j0NzH8dBFyrlnH2bMZndps_xGq5WH
 
 
 ## Learn More
